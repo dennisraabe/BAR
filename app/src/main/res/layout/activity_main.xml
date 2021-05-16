@@ -7,28 +7,17 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/alkoholmengeGramm"
+        android:id="@+id/koerperGewicht"
         android:layout_width="133dp"
         android:layout_height="44dp"
         android:layout_marginStart="14dp"
         android:layout_marginLeft="14dp"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="70Kg"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <EditText
-        android:id="@+id/koerperGewicht"
-        android:layout_width="135dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="294dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <RadioButton
         android:id="@+id/geschlechtFrau"
@@ -36,10 +25,10 @@
         android:layout_height="46dp"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
-        android:layout_marginTop="113dp"
+        android:layout_marginTop="100dp"
         android:text="Weiblich"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/alkoholmengeGramm" />
+        app:layout_constraintTop_toBottomOf="@+id/koerperGewicht" />
 
     <RadioButton
         android:id="@+id/geschlechtMann"
@@ -63,42 +52,6 @@
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/geschlechtMann" />
-
-    <EditText
-        android:id="@+id/zeit05Promille"
-        android:layout_width="148dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="19dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginTop="9dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/aktuellePromille" />
-
-    <EditText
-        android:id="@+id/zeit00Promille"
-        android:layout_width="147dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="17dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/zeit05Promille" />
-
-    <EditText
-        android:id="@+id/aktuellePromille"
-        android:layout_width="149dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="9dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/koerperGewicht" />
 
     <TextView
         android:id="@+id/textView3"
@@ -152,7 +105,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="28dp"
         android:text="Körpergewicht"
-        app:layout_constraintStart_toEndOf="@+id/alkoholmengeGramm"
+        app:layout_constraintStart_toEndOf="@+id/koerperGewicht"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
@@ -199,5 +152,50 @@
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/aktuellPromille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        tools:layout_editor_absoluteY="556dp" />
+
+    <TextView
+        android:id="@+id/stunden05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/aktuellPromille" />
+
+    <TextView
+        android:id="@+id/stunden00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/stunden05" />
+
+    <TextView
+        android:id="@+id/alkoholMenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="271dp"
+        tools:layout_editor_absoluteY="497dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
