@@ -12,8 +12,8 @@
         android:layout_height="44dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="180dp" />
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="148dp" />
 
     <EditText
         android:id="@+id/koerperGewicht"
@@ -21,15 +21,15 @@
         android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="238dp" />
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="473dp" />
 
     <RadioButton
         android:id="@+id/geschlechtFrau"
         android:layout_width="127dp"
         android:layout_height="46dp"
         android:text="Weiblich"
-        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteX="28dp"
         tools:layout_editor_absoluteY="305dp" />
 
     <RadioButton
@@ -37,8 +37,8 @@
         android:layout_width="128dp"
         android:layout_height="47dp"
         android:text="Männlich"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="358dp" />
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="363dp" />
 
     <Button
         android:id="@+id/button"
@@ -81,7 +81,7 @@
         android:layout_height="22dp"
         android:text="aktueller Promille Wert"
         tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="542dp" />
+        tools:layout_editor_absoluteY="552dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         android:text="Stunden bis 0,5 Promille"
         tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="596dp" />
+        tools:layout_editor_absoluteY="610dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -97,22 +97,65 @@
         android:layout_height="wrap_content"
         android:text="Stunden bis 0,0 Promille"
         tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="662dp" />
+        tools:layout_editor_absoluteY="671dp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="144dp"
+        android:layout_height="17dp"
         android:text="Alkoholmenge in g"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="200dp" />
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="492dp" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Körpergewicht"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="253dp" />
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <EditText
+        android:id="@+id/alkoholgehaltVol."
+        android:layout_width="79dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="4,9% Vol"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getrunkene Menge in Liter"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alkoholgehalt des Getränks in %"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="218dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mengeLiter"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:hint="0,33 L"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="27dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
