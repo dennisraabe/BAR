@@ -125,6 +125,8 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="49dp"
         android:text="getrunkene Menge in Liter"
         app:layout_constraintStart_toEndOf="@+id/mengeLiter"
@@ -140,18 +142,6 @@
         android:text="Alkoholgehalt des Getränks in %"
         app:layout_constraintStart_toEndOf="@+id/alkoholgehaltVol."
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/mengeLiter"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="27dp"
-        android:hint="0,33 L"
-        android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/aktuellPromille"
@@ -197,5 +187,18 @@
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="271dp"
         tools:layout_editor_absoluteY="497dp" />
+
+    <EditText
+        android:id="@+id/mengeLiter"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="0,33 L"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
