@@ -14,7 +14,6 @@
         android:layout_marginLeft="14dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="70Kg"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -109,14 +108,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/alkoholgehaltVol."
+        android:id="@+id/alkoholgehaltVol"
         android:layout_width="79dp"
         android:layout_height="45dp"
         android:layout_marginStart="14dp"
         android:layout_marginLeft="14dp"
         android:layout_marginTop="9dp"
         android:ems="10"
-        android:hint="4,9% Vol"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mengeLiter" />
@@ -128,7 +126,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="49dp"
-        android:text="getrunkene Menge in Liter"
+        android:text="getrunkene Menge in ml"
         app:layout_constraintStart_toEndOf="@+id/mengeLiter"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -140,7 +138,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginTop="44dp"
         android:text="Alkoholgehalt des Getränks in %"
-        app:layout_constraintStart_toEndOf="@+id/alkoholgehaltVol."
+        app:layout_constraintStart_toEndOf="@+id/alkoholgehaltVol"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <TextView
@@ -149,11 +147,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="13dp"
         android:layout_marginLeft="13dp"
+        android:layout_marginTop="556dp"
         android:layout_marginEnd="112dp"
         android:layout_marginRight="112dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        tools:layout_editor_absoluteY="556dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/stunden05"
@@ -185,8 +184,11 @@
         android:id="@+id/alkoholMenge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="271dp"
-        tools:layout_editor_absoluteY="497dp" />
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/mengeLiter"
@@ -196,7 +198,6 @@
         android:layout_marginLeft="12dp"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="0,33 L"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
